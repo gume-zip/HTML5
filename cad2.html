@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second cadastro</title>
+    <link rel="stylesheet" href="/styleCad2.css">
+</head>
+<body>
+
+
+    <h1>Formulario de Contato</h1>
+    <form action="submit" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required maxlength="150" minlength="40"
+        placeholder="Digite seu nome">
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" 
+        required placeholder="Digite seu email">
+
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" name="Telefone" pattern="(0-9{2})-[0-9]{4,5}-[0-9]{4}"
+        placeholder="(66) 99999-9969"> 
+
+        <label for="age">Idade</label>
+        <input type="number" name="age" id="age" min="18" max="1000000000"
+        required placeholder="Digite sua idade">
+
+        <h4>Linguagem Preferida</h4>
+        <label for="html">HTML</label>
+        <input type="radio" name="fav_language" value="html" id="html">
+
+        <label for="css">CSS</label>
+        <input type="radio" name="fav_language" id="css" value="css">
+
+        <label for="javascript">JAVASCRIPT</label>
+        <input type="radio" name="fav_language" id="javascript" value="javascript">
+
+        <label for="message">Messagem: </label>
+        <textarea name="message" id="message" rows="5"
+        placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html> 
